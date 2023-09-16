@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 30rem;
+  width: 50%;
+  margin: 50px auto;
+  border-radius: 0px 100px 0px 100px;
+
+  clip-path: polygon(
+    0 0,
+    calc(100% - 80px) 0,
+    100% 80px,
+    100% 100%,
+    80px 100%,
+    0 calc(100% - 80px)
+  );
+  display: flex;
+}
+
+.cont{
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
+}
+
+.left{
+    height: 100%;
+    width: 100%;
+    text-align: right;
+    background-image: url('banner.jpg');
+    background-size: cover;
+}
+
+.right{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+}
+
+
+label{
+    margin: 5px 0px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+label span{
+    font-size: 10px;
+}
+
+.right input{
+    width: 250px;
+    font-size: 15px;
+    padding: 7px;
+}
+
+.content{
+    padding-top: 50px;
+    color: white;
+}
+
+.content h1{
+    padding-right: 30px;
+}
+
+.content p{
+    padding: 20px 30px;
+    font-size: 15px;
+}
+
+.radio{
+    display: flex;
+}
+.radio label{
+    margin: 0px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.radio input{
+    padding: 0px;
+    width: 10px;
+}
+
+.custom-shape-divider-top-1694893951 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1694893951 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 430px;
+}
+
+.custom-shape-divider-top-1694893951 .shape-fill {
+    fill: #C7ACDA;
+}
+
+.button{
+    background-color: #2d9cdb;
+    padding: 10px 20px;
+    width: 120px;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+    border: #2d9cdb;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+.error{
+    border: 2px solid red;
+}
+
+.err{
+    visibility: hidden;
+    font-size: 12px;
+    background-color: red;
+    color: white;
+    width: 200px;
+    margin: 0px;
+}
+
+.show{
+    visibility: visible;
+}
